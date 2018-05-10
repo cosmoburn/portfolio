@@ -1,0 +1,31 @@
+.home-inner {
+  /*background: aqua;*/
+  height: 100%;
+  padding: 5em  4em;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.home-section {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  max-width: 33em;
+  /*background: yellow;*/
+}
+
+.section-header {
+  /*text-align: center;*/
+  font-weight: 800;
+  font-size: 1.5em;
+  color: #c66;
+}
+
+.section-content {
+  /*text-align: center;*/
+  /*padding: 1em;*/
+  font-size: 1.1em;
+  font-family: 'Cardo', Serif;
+}

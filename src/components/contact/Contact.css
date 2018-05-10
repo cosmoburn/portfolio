@@ -1,0 +1,62 @@
+.contact-inner {
+  /*background: aqua;*/
+  height: 100%;
+  padding: 5em  4em;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact-section {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  max-width: 33em;
+  /*background: yellow;*/
+}
+
+.contact-form {
+  /*background: yellow;*/
+  display: flex;
+  flex-flow: column;
+}
+
+input {
+  font-family: 'Cardo', serif !important;
+  font-size: 1em;
+  height: 2em;
+  width: 90%;
+  margin-bottom: 2em;
+  border: 1px solid darkgrey;
+  border-radius: 5px;
+  padding: .3em 1em;
+}
+
+textarea {
+  font-family: 'Cardo', serif !important;
+  font-size: 1em;
+  height: 10em;
+  max-width: 90%;
+  min-width: 90%;
+  margin-bottom: 2em;
+  border: 1px solid darkgrey;
+  border-radius: 5px;
+  padding: .3em 1em;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  color: #f9f4ee;
+  font-size: 1.1em;
+  width: 9em;
+  padding: .8em .5em;
+  font-weight: 600;
+  background: #cc6666;
+  border-radius: 5em;
+  border: 0 solid transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
