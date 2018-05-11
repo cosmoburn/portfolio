@@ -2,7 +2,7 @@ import React from 'react'
 import './Contact.css'
 
 const Contact = () => (
-  <div className='contact animated fadeIn'>
+  <div className='contact animated fadeInRight'>
     <div className='contact-inner'>
 
       <div className='contact-section'>
