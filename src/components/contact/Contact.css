@@ -28,7 +28,7 @@ input {
   font-size: 1em;
   width: 100%;
   margin-bottom: 1em;
-  border: 1px solid darkgrey;
+  border: 1px solid #e2e2e2;
   border-radius: 5px;
   box-sizing: border-box;
   padding: .3em .5em;
@@ -41,7 +41,7 @@ textarea {
   max-width: 100%;
   min-width: 100%;
   margin-bottom: 1em;
-  border: 1px solid darkgrey;
+  border: 1px solid #e2e2e2;
   border-radius: 5px;
   box-sizing: border-box;
   padding: .3em .5em;
