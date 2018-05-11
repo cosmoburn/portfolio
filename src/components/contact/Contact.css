@@ -25,12 +25,12 @@
 input {
   font-family: 'Cardo', serif !important;
   font-size: 1em;
-  height: 2em;
+  height: 1.5em;
   width: 90%;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   border: 1px solid darkgrey;
   border-radius: 5px;
-  padding: .3em 1em;
+  padding: .3em .5em;
 }
 
 textarea {
@@ -39,10 +39,10 @@ textarea {
   height: 10em;
   max-width: 90%;
   min-width: 90%;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   border: 1px solid darkgrey;
   border-radius: 5px;
-  padding: .3em 1em;
+  padding: .3em .5em;
 }
 
 button {
