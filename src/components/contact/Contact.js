@@ -15,7 +15,9 @@ const Contact = () => (
           <input
             placeholder='Subject'
           />
-          <textarea></textarea>
+          <textarea
+            placeholder='How can I help you?'
+          />
           <button>send</button>
         </form>
       </div>
