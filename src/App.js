@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Photo from './assets/self-2.png';
-import Thug from './assets/thug.png';
 import './App.css';
 import { SocialIcons } from 'react-social-icons';
 import Main from './components/Main.js';
