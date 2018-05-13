@@ -1,7 +1,7 @@
 .contact-inner {
   /*background: aqua;*/
   height: 100%;
-  padding: 5em  4em;
+  padding: 0 4em;
   display: flex;
   flex-flow: column;
   justify-content: flex-end;
@@ -61,4 +61,10 @@ button {
 
 button:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 723px){
+  .contact-inner {
+    padding: 0 2em;
+  }
 }

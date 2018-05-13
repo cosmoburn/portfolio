@@ -1,6 +1,5 @@
-import './Work.css'
-
 import React from 'react'
+import './Work.css'
 
 const Work = () => (
   <div className='work animated fadeIn'>

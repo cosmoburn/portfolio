@@ -29,13 +29,11 @@ class Header extends Component {
 
   componentDidMount() {
     this.decideArrowClass(this.props.location.pathname)
-    console.log(' deciding on mount with location:', this.props.location.pathname)
 
     this.unlisten = this.props.history.listen((location) => {
       this.decideArrowClass(location.pathname)
     })
     if (this.props.location.pathname === '/') {this.setState({backArrowClass: 'hide'})}
-    console.log(' fixing on mount with location:', this.props.location.pathname)
   }
 
   componentWillUnmount() {

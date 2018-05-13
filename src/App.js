@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom'
 import Photo from './assets/self-2.png';
 import './App.css';
 import { SocialIcons } from 'react-social-icons';
@@ -19,19 +20,53 @@ class App extends Component {
     super(props);
 
     this.state = {
+      windowWidth: window.innerWidth,
       firstLoad: 'hide',
       secondLoad: 'hide',
       thirdLoad: 'hide',
       fourthLoad: 'hide',
       fifthLoad: 'hide'
-
     };
 
+    this.ifWindowWidthChanged = this.ifWindowWidthChanged.bind(this)
 
+  }
 
-    setTimeout( () => {
-      this.setState({firstLoad: 'animated fadeInLeftBig'})
-    }, 0);
+  componentDidMount() {
+    
+    this.startLoadingAnimations()
+    
+    //setup listener for window location
+    this.unlisten = this.props.history.listen((location) => {
+      this.updateLayoutForMobile(location.pathname)
+    })
+
+    //setup listener for window resizing
+    window.addEventListener('resize', this.ifWindowWidthChanged)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.ifWindowWidthChanged)
+    this.unlisten()
+  }
+
+  ifWindowWidthChanged() {
+    this.setState({ windowWidth: window.innerWidth })
+    this.updateLayoutForMobile(this.props.location.pathname)
+  }
+
+  updateLayoutForMobile(pathname) {
+    if (pathname === '/') {
+      this.setState({ firstLoad: 'animated fadeInLeftBig' })
+    } else {
+      this.setState({ firstLoad: this.state.windowWidth <= 723 ? 'hide' : 'animated fadeInLeftBig' })
+    }
+  }
+
+  // adds staggered animation classes
+  startLoadingAnimations() {
+
+    this.updateLayoutForMobile(this.props.location.pathname)
 
     setTimeout( () => {
       this.setState({secondLoad: 'animated fadeInLeftBig'})
@@ -45,20 +80,6 @@ class App extends Component {
     setTimeout( () => {
       this.setState({fifthLoad: 'animated bounceInLeft'})
     }, 1050)
-  }
-
-  tick() {
-    this.setState( (prevState) => ({
-      secondsElapsed: prevState.secondsElapsed + 1
-    }))
-  }
-
-  componentDidMount() {
-    this.interval = setInterval(this.tick.bind(this), 1000)
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.interval)
   }
 
   render() {
@@ -93,4 +114,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withRouter(App);

@@ -1,14 +1,14 @@
-.work-inner {
+.thanks-inner {
   /*background: aqua;*/
   height: 100%;
-  padding: 0  4em;
+  padding: 0 4em;
   display: flex;
   flex-flow: column;
   justify-content: flex-end;
   align-items: center;
 }
 
-.work-section {
+.thanks-section {
   display: flex;
   flex-flow: column;
   width: 100%;
@@ -16,8 +16,8 @@
   /*background: yellow;*/
 }
 
-@media screen and (max-width: 752px){
-  .work-inner {
+@media screen and (max-width: 723px){
+  .thanks-inner {
     padding: 0 2em;
   }
 }
