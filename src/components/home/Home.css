@@ -1,5 +1,4 @@
 .home-inner {
-  /*background: aqua;*/
   height: 100%;
   padding: 0 4em;
   display: flex;
@@ -13,11 +12,9 @@
   flex-flow: column;
   width: 100%;
   max-width: 33em;
-  /*background: yellow;*/
 }
 
 .section-header {
-  /*text-align: center;*/
   font-weight: 800;
   font-size: 1.3em;
   color: #c66;

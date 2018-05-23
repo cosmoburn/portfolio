@@ -1,5 +1,4 @@
 .contact-inner {
-  /*background: aqua;*/
   height: 100%;
   padding: 0 4em;
   display: flex;
@@ -13,19 +12,17 @@
   flex-flow: column;
   width: 100%;
   max-width: 33em;
-  /*background: yellow;*/
 }
 
 .contact-form {
-  /*background: aqua;*/
   width: 100%;
   display: flex;
   flex-flow: column;
 }
 
 input {
-  font-family: 'Cardo', serif !important;
-  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .95em;
   width: 100%;
   margin-bottom: 1em;
   border: 1px solid #dcdcdc;
@@ -35,8 +32,8 @@ input {
 }
 
 textarea {
-  font-family: 'Cardo', serif !important;
-  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .95em;
   height: 10em;
   max-width: 100%;
   min-width: 100%;
