@@ -10,7 +10,7 @@ const Contact = () => (
 
 
         {/* build in form by Netlify are amazing! - https://www.netlify.com/docs/form-handling/ -*/}
-        <form className='contact-form' method='POST' netlify action='/thanks'>
+        <form className='contact-form' method='POST' netlify action='http://arthursaboya.com/thanks'>
           {/*<input type='hidden' name='next' value='https://arthursilveira.github.io/portfolio/#/thanks'/>*/}
           <input type='email' name='email' placeholder='Your email'/>
           <input type='subject' name='subject' placeholder='Subject'/>
