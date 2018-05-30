@@ -8,10 +8,10 @@ const Contact = () => (
       <div className='contact-section'>
         <h2 className='section-header'>Get in touch!</h2>
 
+        {/*<input type='hidden' name='next' value='https://arthursilveira.github.io/portfolio/#/thanks'/>*/}
 
         {/* build in form by Netlify are amazing! - https://www.netlify.com/docs/form-handling/ -*/}
-        <form className='contact-form' method='POST' netlify action="https://arthursaboya.netlify.com/thanks">
-          {/*<input type='hidden' name='next' value='https://arthursilveira.github.io/portfolio/#/thanks'/>*/}
+        <form className='contact-form' method='POST' netlify action="/thanks">
           <input type="hidden" name="form-name" value="contact-form" />
           <input type='email' name='email' placeholder='Your email'/>
           <input type='subject' name='subject' placeholder='Subject'/>
@@ -23,5 +23,7 @@ const Contact = () => (
 
   </div>
 )
+
+
 
 export default Contact
