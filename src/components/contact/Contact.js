@@ -40,7 +40,6 @@ class Contact extends Component {
   }
 
   submitForm (e) {
-    e.preventDefault()
     this.props.history.push('/thanks')
   }
 
