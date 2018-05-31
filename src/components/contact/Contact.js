@@ -40,6 +40,7 @@ class Contact extends Component {
   }
 
   submitForm (e) {
+    e.preventDefault()
     this.props.history.push('/thanks')
   }
 
@@ -54,7 +55,7 @@ class Contact extends Component {
             {/*<input type='hidden' name='next' value='https://arthursilveira.github.io/portfolio/#/thanks'/>*/}
 
             {/* build in form by Netlify are amazing! - https://www.netlify.com/docs/form-handling/ -*/}
-            <form onSubmit={this.submitForm.bind(this)} className='contact-form' name='contact-form' method='POST' action='/thanks' data-netlify='true' data-netlify-honeypot='bot-field'>
+            <form onSubmit={this.submitForm.bind(this)} className='contact-form' name='contact-form' method='POST' data-netlify='true' data-netlify-honeypot='bot-field'>
               <input type='hidden' name='form-name' value='contact-form' />
               <input type='hidden' name='bot-field'/>
               <input type='email' name='email' placeholder='Your email'/>
