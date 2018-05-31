@@ -11,8 +11,9 @@ const Contact = () => (
         {/*<input type='hidden' name='next' value='https://arthursilveira.github.io/portfolio/#/thanks'/>*/}
 
         {/* build in form by Netlify are amazing! - https://www.netlify.com/docs/form-handling/ -*/}
-        <form className='contact-form' name='contact-form' method='POST' netlify>
-          <input type="hidden" name="form-name" value="contact-form" />
+        <form className='contact-form' name='contact-form' method='POST' action='http://arthursaboya.com/thanks' data-netlify='true' data-netlify-honeypot='bot-field'>
+          <input type='hidden' name='form-name' value='contact-form' />
+          <input type='hidden' name='bot-field'/>
           <input type='email' name='email' placeholder='Your email'/>
           <input type='subject' name='subject' placeholder='Subject'/>
           <textarea name='message' placeholder='How can I help you today?'/>
