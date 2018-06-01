@@ -9,7 +9,7 @@ const Contact = () => (
         <h2 className='section-header'>Get in touch!</h2>
 
         {/* build in form by Netlify are amazing! - https://www.netlify.com/docs/form-handling/ -*/}
-        <form className='contact-form' name='contact-form' method='POST' action='/thanks' data-netlify='true' data-netlify-honeypot='bot-field'>
+        <form className='contact-form' name='contact-form' method='POST' action='/' data-netlify='true' data-netlify-honeypot='bot-field'>
           <input type='hidden' name='form-name' value='contact-form' />
           <input type='hidden' name='bot-field'/>
           
