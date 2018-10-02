@@ -94,7 +94,7 @@ class App extends Component {
             <span>arthur</span><span className='bold'> saboya</span>
           </div>
           <div className={`brand-section brand-tagline ${this.state.fourthLoad}`}>
-            <div>FULLSTACK WEB DEVELOPER</div>
+            <div>WEB DEVELOPER</div>
             <div>UI/UX DESIGNER</div>
           </div>
           <div className='brand-section brand-social'>
