@@ -1,6 +1,5 @@
 import React from 'react'
 import './Home.css'
-// import { Link } from 'react-router-dom'
 
 const Home = () => (
   <div className='home animated fadeIn'>
@@ -10,7 +9,7 @@ const Home = () => (
         <div className='section-header'>Who.</div>
         <div className='section-content'>
           <p>
-            I am a <b>developer</b>/<b>designer</b> born in Rio de Janeiro. <br/>
+            I am a <b>developer</b>/<b>designer</b> in love with React. <br/>
             I am proficient in development, passionate about design and fascinated by user experience.
           </p>
         </div>
@@ -39,10 +38,10 @@ const Home = () => (
         <div className='section-header'>Why.</div>
         <div className='section-content'>
           <p>
-            Because impressions matter and nowadays your website is an extension of your brand.
+            Because impressions matter and nowadays your web applications are an extension of your brand.
             <br/>
             <br/>
-            {/*Not sold yet? ... Check out <Link to='/work'>my work</Link>*/}
+            I also have a more formal <a href="https://arthursaboya.com/resume.pdf">resumé</a> if you are into that.
           </p>
 
         </div>
