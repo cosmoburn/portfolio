@@ -28,7 +28,6 @@ class Header extends Component {
   }
 
   componentDidMount() {
-    console.log('process.env :', process.env);
     this.decideArrowClass(this.props.location.pathname)
 
     this.unlisten = this.props.history.listen((location) => {
