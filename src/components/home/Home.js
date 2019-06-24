@@ -41,7 +41,7 @@ const Home = () => (
             Because impressions matter and nowadays your web applications are an extension of your brand.
             <br/>
             <br/>
-            I also have a more formal <a href="https://arthursaboya.com/resume.pdf">resumé</a> if you are into that.
+            I also have a more formal <a target="_blank" href="https://arthursaboya.com/resume.pdf">resumé</a> if you are into that.
           </p>
 
         </div>
